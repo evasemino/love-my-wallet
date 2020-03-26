@@ -1,11 +1,12 @@
-
-@import 'abstracts/variables';
-
 @import 'vendors/bootstrap-4.4.1/bootstrap.scss';
 
+@import 'abstracts/variables';
 
 @import 'layout/navbar';
 @import 'layout/footer';
 
+@import 'components/button';
+
 @import 'pages/home';
+@import 'pages/pago';
 

@@ -1,29 +1,5 @@
-// -----------------------------------------------------------------------------
-// This file contains styles that are specific to the home page.
-// -----------------------------------------------------------------------------
 .main {
-    background-color: red;
-}
-
-.pago__container {
-    margin: 0 auto;
+    background-color: $grey;
     padding: 3em;
-
-}
-
-.pago__description {
-    font-family: $primary-font;
-    font-size: $font-size-small;
-   
-}
-
-.pago__button {
-    background-color: rebeccapurple;
-    border: 1px solid black;
-    border-radius: 15px;
-    margin-bottom: 15px;
-}
-.pago__container-primary{
-    border: 1px solid black;
-    border-radius: 3px;
+    
 }

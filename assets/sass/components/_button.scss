@@ -1,0 +1,19 @@
+
+.button {
+
+    font-family: $primary-font;
+    color: $black;
+    
+
+}
+
+.primary-button {
+    background-color: $safe;
+    border: 1px solid $safe;
+    border-radius: 15px;
+    font-weight: $bold;
+    font-size: $font-size-medium;
+    height: 18px;
+    width: 250px;
+
+}

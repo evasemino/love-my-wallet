@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+
+.pago__container {
+    margin: 0 auto;
+    padding: 3em;
+
+}
+
+.pago__description {
+    font-family: $primary-font;
+    font-size: $font-size-small;
+   
+}
+
+.pago__container-primary{
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 2em;
+}

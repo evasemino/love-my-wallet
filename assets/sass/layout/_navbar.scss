@@ -12,8 +12,6 @@
 .navigation__logo {
     position: absolute;
     padding: 2em;
-
-
 }  
 
  
@@ -28,9 +26,15 @@
     } 
 }
 
+.hamburger {
+  color: $white;
+
+}
+
 #menu {
     display: none;
   }
+
 
 
   input:checked ~ .navigation__container { 
@@ -58,8 +62,9 @@
     font-size: 1.2rem;
     font-weight: $bold;
     text-decoration: none;
+    color: $white;
     &:hover { 
-        color: $white;
+        color: $sylver;
     } 
  }
 }
@@ -82,13 +87,15 @@
     max-height: 100%;
     padding: .5em 3em .5em 0;
     overflow: visible;
+    display: flex;
   }
   
   .navigation__list {
     display: flex;
     justify-content: flex-end;
     margin: inherit;
-    padding: inherit;3
+    padding: inherit;
+    color: $white;
   }
   .navigation__item { a{
     padding: .5em 1em;
