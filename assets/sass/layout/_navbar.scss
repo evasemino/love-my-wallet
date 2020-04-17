@@ -6,19 +6,24 @@
     position: relative;
     background-color: $black;
   
+  
   }
 
    
 .navigation__logo {
     position: absolute;
-    padding: 2em;
+    padding: 1em;
+    width: 70%;
 }  
 
- 
+.navigation__logo-img {
+  width: 25%;
+}
+
 .collapsible {
   text-align: end;
     label {
-        display: block;
+      
         padding-top: .5em;
         padding-bottom: .5em;
         padding-right: 1.5em;
