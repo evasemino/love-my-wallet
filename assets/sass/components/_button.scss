@@ -3,17 +3,31 @@
 
     font-family: $primary-font;
     color: $black;
-    
 
 }
 
-.primary-button {
+.pagar {
+    background-color: $sky;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+.agregar {
+
+    background-color: $sky;
+    border: 1px solid $sky;
+    border-radius: 15px;
+
+}
+
+.pagartodo {
+
     background-color: $safe;
     border: 1px solid $safe;
     border-radius: 15px;
     font-weight: $bold;
     font-size: $font-size-medium;
-    height: 18px;
+    height: 40px;
     width: 250px;
 
 }

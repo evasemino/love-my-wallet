@@ -9890,10 +9890,6 @@ h3 {
   width: 25%;
 }
 
-.navigation__title {
-  color: #FFFFFF;
-}
-
 .collapsible {
   text-align: end;
 }
@@ -9991,14 +9987,37 @@ input:checked ~ .navigation__container {
   color: #000000;
 }
 
-.primary-button {
+.pagar {
+  background-color: #43C4E0;
+  border: 1px solid;
+  border-radius: 15px;
+}
+
+.agregar {
+  background-color: #43C4E0;
+  border: 1px solid #43C4E0;
+  border-radius: 15px;
+}
+
+.pagartodo {
   background-color: #84CA63;
   border: 1px solid #84CA63;
   border-radius: 15px;
   font-weight: 700;
   font-size: 14;
-  height: 18px;
+  height: 40px;
   width: 250px;
+}
+
+.carousel-indicators {
+  top: 150px;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  color: #373A3C;
 }
 
 /*.pago {

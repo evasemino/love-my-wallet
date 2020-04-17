@@ -41,7 +41,6 @@
                         <li class="navigation__item"><a href="#Pagar-cuentas">Pagar cuentas</a></li>
                         <li class="navigation__item"><a href="#Mis-puntos">Mis puntos</a></li>
                         <li class="navigation__item"><a href="#">Actividad reciente</a></li>
-                        <li class="navigation__item"><a href="#">Mis puntos</a></li>
                         <li class="navigation__item"><a href="#">Medios de pago</a></li>
                         <li class="navigation__item"><a href="#">Perfil</a></li>
                     </ul>
@@ -56,30 +55,29 @@
 
     <section class="pago">
 
-        <div class="pago__container row">
-            <p class="col-6 pago__description">Cuentas por pagar</p>
-
-            <button type="button" class="col-6 btn btn-secondary">Pagar Todas</button>
-        </div>
 
         <div class="pago__container-primary row">
             <p class=" col-6 pago__description">Personal</p>
-
-            <button type="button" class="col-6 btn btn-secondary">Pagar</button>
+            <button type="button" class="col-6 btn btn-secondary pagar">Pagar</button>
         </div>
 
         <div class="pago__container-primary row">
             <p class="col-6 pago__description">Fibertel</p>
-
-            <button type="button" class="col-6 btn btn-secondary">Pagar</button>
-
+            <button type="button" class="col-6 btn btn-secondary pagar">Pagar</button>
         </div>
 
         <section class="agregar__container mx-auto">
             <div class="pago__primary-button">
-                <button type="button" class="btn btn-primary">Agregar impuesto</button>
-        </section>
+                <button type="button" class="btn btn-secondary agregar">Agregar impuesto</button>
+            </div>
 
+
+            <div class="pago__container row">
+                <p class="col-6 pago__description">Cuentas por pagar</p>
+                <button type="button" class="col-6 btn btn-primary pagartodo">Pagar Todas</button>
+            </div>
+
+        </section>
 
         <section class="beneficios container mx-auto my-5 d-block">
 
@@ -148,7 +146,7 @@
         <h5>Productos</h5>
 
         <div class="puntos__container row">
-            <p class="col-6 pago__description">Puntos acumpulados</p>
+            <p class="col-6 pago__description">Puntos acumulados</p>
             <button type="button" class="col-6 btn btn-secondary">Canjear</button>
         </div>
 
@@ -224,7 +222,7 @@
             <a href="" class="footer__link"> Contacto </a>
         </footer>
 </body>
-<script src="assets/js/script.js"></script>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"> </script>
 
@@ -239,6 +237,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
+<script src="assets/js/script.js"></script>
 
 
 
