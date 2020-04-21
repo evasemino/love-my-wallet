@@ -8,15 +8,15 @@
 
 .pagar {
     background-color: $sky;
-    border: 1px solid;
-    border-radius: 15px;
+    border: 1px solid $sky;
+    border-radius: 19px;
 }
 
 .agregar {
 
     background-color: $sky;
     border: 1px solid $sky;
-    border-radius: 15px;
+    border-radius: 19px;
 
 }
 
@@ -24,10 +24,20 @@
 
     background-color: $safe;
     border: 1px solid $safe;
-    border-radius: 15px;
     font-weight: $bold;
     font-size: $font-size-medium;
-    height: 40px;
-    width: 250px;
+    border-radius: 19px;
 
+}
+
+.servicios-impagos {
+    
+   color: $white;
+
+}
+
+.canjear {
+    background-color: $sky;
+    border: 1px solid $sky;
+    border-radius: 19px;    
 }

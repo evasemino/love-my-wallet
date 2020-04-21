@@ -9875,6 +9875,10 @@ h3 {
     border-color: #dee2e6;
   }
 }
+header {
+  border-bottom: 1px solid #FFFFFF;
+}
+
 .navigation {
   position: relative;
   background-color: #000000;
@@ -9887,7 +9891,7 @@ h3 {
 }
 
 .navigation__logo-img {
-  width: 25%;
+  width: 50%;
 }
 
 .collapsible {
@@ -9969,17 +9973,18 @@ input:checked ~ .navigation__container {
   }
 }
 .footer {
-  background-color: #000000;
+  color: #FFFFFF;
   display: block;
   padding: 3em;
   text-align: center;
+  border-top: solid #FFFFFF 1px;
 }
 
 .footer__link {
   font-family: "Oxygen", sans-serif;
   font-weight: 700;
-  font-size: 18;
-  text-decoration: underline;
+  font-size: 12;
+  text-decoration: none;
 }
 
 .button {
@@ -9989,24 +9994,32 @@ input:checked ~ .navigation__container {
 
 .pagar {
   background-color: #43C4E0;
-  border: 1px solid;
-  border-radius: 15px;
+  border: 1px solid #43C4E0;
+  border-radius: 19px;
 }
 
 .agregar {
   background-color: #43C4E0;
   border: 1px solid #43C4E0;
-  border-radius: 15px;
+  border-radius: 19px;
 }
 
 .pagartodo {
   background-color: #84CA63;
   border: 1px solid #84CA63;
-  border-radius: 15px;
   font-weight: 700;
-  font-size: 14;
-  height: 40px;
-  width: 250px;
+  font-size: 10;
+  border-radius: 19px;
+}
+
+.servicios-impagos {
+  color: #FFFFFF;
+}
+
+.canjear {
+  background-color: #43C4E0;
+  border: 1px solid #43C4E0;
+  border-radius: 19px;
 }
 
 .carousel-indicators {
@@ -10020,25 +10033,69 @@ input:checked ~ .navigation__container {
   color: #373A3C;
 }
 
-/*.pago {
-     background-color: $black;
-    padding: 1 2 2 1em;
+body {
+  background-color: #000000;
+  color: #FFFFFF;
+}
 
-}*/
+h1 {
+  font-size: 12px;
+}
+
+h2 {
+  font-size: 10px;
+}
+
+h4 {
+  font-size: 8px;
+}
+
 .pago__container {
   margin: 0 auto;
-  padding: 3em;
+  border-bottom: solid #FFFFFF 1px;
 }
 
-.pago__description {
+.cuenta__container {
+  background-color: black;
   font-family: "Oxygen", sans-serif;
-  font-size: 12;
+  font-size: 8;
+  border: solid #FFFFFF 1px;
+  border-radius: 8px;
 }
 
-.pago__container-primary {
-  border: 1px solid black;
-  border-radius: 3px;
-  padding: 2em;
+.puntos {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.puntos__cantidad {
+  color: #84CA63;
+}
+
+.conteiner__medios-pago {
+  height: 667px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.comprobante__container {
+  height: 667px;
+}
+
+.comprobante__boton-descarga {
+  background-color: #84CA63;
+  border: 1px solid #84CA63;
+  font-weight: 700;
+  font-size: 10;
+  border-radius: 19px;
+  box-sizing: content-box;
+}
+
+.comprobante__boton-retorno {
+  background-color: #43C4E0;
+  border: 1px solid #43C4E0;
+  border-radius: 19px;
+  box-sizing: content-box;
 }
 
 /*# sourceMappingURL=styles.css.map */

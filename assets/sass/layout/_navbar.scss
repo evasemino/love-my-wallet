@@ -1,11 +1,14 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+header {
+  border-bottom: 1px solid $white;
+}
 
 .navigation {
     position: relative;
     background-color: $black;
-  
+
   
   }
    
@@ -16,7 +19,7 @@
 }  
 
 .navigation__logo-img {
-  width: 25%;
+  width: 50%;
 }
 
 .collapsible {
