@@ -1,9 +1,14 @@
-@import 'vendors/bootstrap-4.4.1/bootstrap.scss';
 
 @import 'abstracts/variables';
 
+@import 'vendors/bootstrap-4.4.1/bootstrap.scss';
+
+@import 'base/reset';
+@import 'base/typography';
+
 @import 'layout/navbar';
 @import 'layout/footer';
+
 
 @import 'components/button';
 @import 'components/carrousel';
@@ -12,5 +17,4 @@
 @import 'pages/index';
 @import 'pages/pago';
 @import 'pages/comprobante';
-
 

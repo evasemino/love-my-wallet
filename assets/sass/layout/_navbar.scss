@@ -15,7 +15,7 @@ header {
 .navigation__logo {
     position: absolute;
     padding: 1em;
-    width: 70%;
+    width: 50%;
 }  
 
 .navigation__logo-img {
@@ -63,10 +63,10 @@ header {
 .navigation__item { 
     a {
     display: block;
-    text-align: left;
+    text-align: right;
     padding: .5em;
     font-family:$primary-font;
-    font-size: 1.2rem;
+    font-size: $font-size-small;
     font-weight: $bold;
     text-decoration: none;
     color: $white;
@@ -77,7 +77,7 @@ header {
 }
 
  
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 720px) {
     .navigation__logo {
     top: 1em;
     left: 3em;
@@ -91,7 +91,7 @@ header {
 
  
   .navigation__container {
-    max-height: 100%;
+    
     padding: .5em 3em .5em 0;
     overflow: visible;
     display: flex;
