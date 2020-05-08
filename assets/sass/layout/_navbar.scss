@@ -1,113 +1,106 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
-header {
-  border-bottom: 1px solid $white;
-}
 
 .navigation {
-    position: relative;
-    background-color: $black;
+  position: relative;
+}
 
-  
-  }
-   
 .navigation__logo {
-    position: absolute;
-    padding: 1em;
-    width: 50%;
-}  
-
-.navigation__logo-img {
+  position: absolute;
+  top: 0.5em;
+  left: 1em;
   width: 50%;
 }
 
-.collapsible {
-  text-align: end;
-    label {
-      
-        padding-top: .5em;
-        padding-bottom: .5em;
-        padding-right: 1.5em;
-        font-size: 1.8rem;
-    } 
+img {
+  width: 3rem;
 }
 
-.hamburger {
-  color: $white;
-
+.collapsible {
+  text-align: right;
+  label {
+    display: block;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    font-size: 1.8rem;
+    justify-content: center;
+  }
 }
 
 #menu {
-    display: none;
-  }
-
-
-
-  input:checked ~ .navigation__container { 
-      max-height: 100%;
-  }
-
-   
-.navigation__container {
-    max-height: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-
-.navigation__list{
-    list-style: none;
-    padding: 2em;
+  display: none;
 }
 
-.navigation__item { 
-    a {
+input:checked ~ .navigation__container {
+  max-height: 100%;
+}
+
+.navigation__container {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navigation__list {
+  list-style: none;
+}
+
+.navigation__item {
+  a {
     display: block;
     text-align: right;
-    padding: .5em;
-    font-family:$primary-font;
-    font-size: $font-size-small;
-    font-weight: $bold;
-    text-decoration: none;
+    padding: 1em;
+    font-family: $primary-font;
+    font-size: $font-size-medium;
+    font-weight: $regular;
     color: $white;
-    &:hover { 
-        color: $sylver;
-    } 
- }
-}
+    text-decoration: none;
 
- 
-@media only screen and (min-width: 720px) {
-    .navigation__logo {
+    &:hover {
+      color: $sylver;
+    }
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .navigation__logo {
     top: 1em;
     left: 3em;
   }
-  .collapsible {
 
-    label {
-      display: none;
+  .navigation__collapsible {
+    .collapsible {
+      label {
+        display: none;
+      }
+    }
+
+    .navigation__container {
+      max-height: 100%;
+      padding: 1em 3em 3em 1em;
+      overflow: visible;
+    }
+
+    .navigation__list {
+      input:checked {
+        transition-property: all;
+        transition-duration: 1s;
+        transition-delay: 1s;
+      }
+      display: flex;
+      justify-content: flex-end;
+      margin: inherit;
+      padding: inherit;
+    }
+
+    .navigation__item {
+      a {
+        padding: 0.5em 1em;
+        font-size: 1rem;
+        font-weight: $regular;
+      }
     }
   }
-
- 
-  .navigation__container {
-    
-    padding: .5em 3em .5em 0;
-    overflow: visible;
-    display: flex;
-  }
-  
-  .navigation__list {
-    display: flex;
-    justify-content: flex-end;
-    margin: inherit;
-    padding: inherit;
-    color: $white;
-  }
-  .navigation__item { a{
-    padding: .5em 1em;
-    font-size: 1rem;
-    font-weight: $regular;
-} 
-}
 }

@@ -1,20 +1,7 @@
-.comprobante__container {
-    height: 667px;
-
-}
-
-.comprobante__boton-descarga {
-    background-color: $safe;
-    border: 1px solid $safe;
-    font-weight: $bold;
-    font-size: $font-size-medium;
-    border-radius: 19px;
-    box-sizing: content-box;
-}
-
-.comprobante__boton-retorno {
-    background-color: $sky;
-    border: 1px solid $sky;
-    border-radius: 19px;
-    box-sizing: content-box;
+.modal {
+  background-color: $sylver;
+  font-family: $primary-font;
+  font-size: $font-size-medium;
+  color: $black !important;
+  text-align: center;
 }

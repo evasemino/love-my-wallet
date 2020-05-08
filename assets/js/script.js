@@ -1,13 +1,9 @@
 $(document).ready(function () {
+  $(".agregar-servicio").on(
+    "click",
 
-    $('.agregar-servicio')
-
-        .on(
-            'click',
-
-            function () {
-
-                var lementoAPagar = `
+    function () {
+      var lementoAPagar = `
                 <br> 
 
                 <li class="list-group-item cuenta__container py-3 my-3">
@@ -25,11 +21,7 @@ $(document).ready(function () {
                 
             </li> 
           `;
-                $('.servicios-impagos').append(lementoAPagar);
-            },
-        );
-
+      $(".servicios-impagos").append(lementoAPagar);
+    }
+  );
 });
-
-
-

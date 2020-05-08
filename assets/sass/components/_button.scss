@@ -1,43 +1,59 @@
-
 .button {
-
-    font-family: $primary-font;
-    color: $black;
-
+  font-family: $primary-font;
+  color: $black;
 }
 
 .pagar {
-    background-color: $sky;
-    border: 1px solid $sky;
-    border-radius: 19px;
+  background-color: $sky;
+  border: 1px solid $sky;
+  border-radius: 19px;
 }
 
 .agregar {
-
-    background-color: $sky;
-    border: 1px solid $sky;
-    border-radius: 19px;
-
+  background-color: $sky;
+  border: 1px solid $sky;
+  border-radius: 19px;
 }
 
 .pagartodo {
-
-    background-color: $safe;
-    border: 1px solid $safe;
-    font-weight: $bold;
-    font-size: $font-size-medium;
-    border-radius: 19px;
-
+  background-color: $safe;
+  border: 1px solid $safe;
+  font-weight: $bold;
+  font-size: $font-size-medium;
+  border-radius: 19px;
 }
 
 .servicios-impagos {
-    
-   color: $white;
-
+  color: $white;
 }
 
 .canjear {
-    background-color: $sky;
-    border: 1px solid $sky;
-    border-radius: 19px;    
+  background-color: $sky;
+  border: 1px solid $sky;
+  border-radius: 19px;
+}
+
+.confirmar {
+  background-color: $safe;
+  border: 1px solid $safe;
+  font-weight: $bold;
+  font-size: $font-size-medium;
+  border-radius: 29px;
+  box-sizing: content-box;
+}
+
+.descarga {
+  background-color: $safe;
+  border: 1px solid $safe;
+  font-weight: $bold;
+  font-size: $font-size-medium;
+  border-radius: 19px;
+  box-sizing: content-box;
+}
+
+.retorno {
+  background-color: $sky;
+  border: 1px solid $sky;
+  border-radius: 19px;
+  box-sizing: content-box;
 }
