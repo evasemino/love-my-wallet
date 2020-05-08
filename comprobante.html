@@ -1,179 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="keywords" content="billetera, cuentas, gestion, pagos" />
-    <meta name="author" content="Eva Semino" />
-    <meta
-      name="description"
-      content="gestiona tus pagos de manera práctica, clara y eficiente"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Oxygen:400,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-
-            UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+  <meta name="keywords" content="billetera, cuentas, gestion, pagos" />
+  <meta name="author" content="Eva Semino" />
+  <meta name="description" content="gestiona tus pagos de manera práctica, clara y eficiente" />
 
-    <title>KIT PAGO</title>
-  </head>
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-
+            UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 
-  <body>
-    <nav class="navigation">
-      <div class="navigation__logo">
-        <a href="index.html">
-          <img
-            class="navigation__logo-img"
-            src="assets/images/billetera.svg"
-            alt="Logo-LMW"
-        /></a>
+  <title>KIT PAGO</title>
+</head>
+
+<body>
+  <nav class="navigation">
+    <div class="navigation__logo">
+      <a href="index.html">
+        <img class="navigation__logo-img" src="assets/images/billetera.svg" alt="Logo-LMW" /></a>
+    </div>
+    <div class="collapsible">
+      <input type="checkbox" id="menu" />
+      <label for="menu"><i class="fas fa-bars"></i></label>
+      <div class="navigation__container">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="index.html">Inicio</a></li>
+          <li class="navigation__item">
+            <a href="index.html">Pagar cuentas</a>
+          </li>
+          <li class="navigation__item">
+            <a href="index.html">Beneficios</a>
+          </li>
+          <li class="navigation__item">
+            <a href="index.html">Mis puntos</a>
+          </li>
+          <li class="navigation__item">
+            <a href="mis-pagos">Mis pagos</a>
+          </li>
+          <li class="navigation__item"><a href="index.html">Contacto</a></li>
+        </ul>
       </div>
-      <div class="collapsible">
-        <input type="checkbox" id="menu" />
-        <label for="menu"><i class="fas fa-bars"></i></label>
-        <div class="navigation__container">
-          <ul class="navigation__list">
-            <li class="navigation__item"><a href="index.html">Inicio</a></li>
-            <li class="navigation__item">
-              <a href="index.html">Pagar cuentas</a>
-            </li>
-            <li class="navigation__item">
-              <a href="index.html">Beneficios</a>
-            </li>
-            <li class="navigation__item">
-              <a href="index.html">Mis puntos</a>
-            </li>
-            <li class="navigation__item">
-              <a href="mis-pagos">Mis pagos</a>
-            </li>
-            <li class="navigation__item"><a href="index.html">Contacto</a></li>
-          </ul>
-        </div>
+    </div>
+  </nav>
+
+  <hr />
+
+  <main class="container">
+    <section class="comprobante__container d-flex row">
+      <div class="comprobante__container-mensaje col-12 justify-content-center">
+        <p class="comprobante__mensaje text-uppercase text-align-center p-2">
+          Felicitaciones! tu pago ha sido procesado de manera exitosa
+        </p>
       </div>
-    </nav>
+      <div class="container">
+        <article class="d-flex p-2 bd-highlight justify-content-center">
+          <div class="retorno">
+            <a href="index.html" class="btn button retorno text-uppercase">volver</a>
+          </div>
+        </article>
+      </div>
 
-    <hr />
+      <!-- Button trigger modal -->
+      <button type="button" class="btn button descarga" data-toggle="modal" data-target="#aguarde">
+        Descargar comprobante
+      </button>
 
-    <main class="container">
-      <section class="comprobante__container d-flex row">
-        <div
-          class="comprobante__container-mensaje col-12 justify-content-center"
-        >
-          <p class="comprobante__mensaje text-uppercase text-align-center p-2">
-            Felicitaciones! tu pago ha sido procesado de manera exitosa
-          </p>
-        </div>
-        <div class="container">
-          <article class="d-flex p-2 bd-highlight justify-content-center">
-            <div class="retorno">
-              <a href="index.html" class="btn button retorno text-uppercase"
-                >volver</a
-              >
+      <!-- Modal -->
+      <div class="modal fade" id="aguarde" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-dark text-uppercase" id="exampleModalLabel">
+                Descargar comprobante
+              </h5>
+              <button type="button" class="close text-uppercase" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-          </article>
-        </div>
-
-        <!-- Button trigger modal -->
-        <button
-          type="button"
-          class="btn button descarga"
-          data-toggle="modal"
-          data-target="#aguarde"
-        >
-          Descargar comprobante
-        </button>
-
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="aguarde"
-          tabindex="-1"
-          role="dialog"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title text-uppercase" id="exampleModalLabel">
-                  Descargar comprobante
-                </h5>
-                <button
-                  type="button"
-                  class="close text-uppercase"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
+            <div class="modal-body modal__container text-dark">
+              <p>Aguarde mientras procesamos su comprobante</p>
+              <div class="spinner-border text-dark p-2 m-4" role="status">
+                <span class="sr-only">Loading...</span>
               </div>
-              <div class="modal-body modal__container">
-                <p>Aguarde mientras procesamos su comprobante</p>
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn button retorno text-uppercase"
-                  data-dismiss="modal"
-                >
-                  Cerrar
-                </button>
-                <button
-                  type="button"
-                  class="btn button descarga text-uppercase"
-                >
-                  Guardar
-                </button>
-              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn button retorno text-uppercase" data-dismiss="modal">
+                Cerrar
+              </button>
+              <button type="button" class="btn button descarga text-uppercase">
+                Guardar
+              </button>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer id="Contacto" class="footer">
-      <a href="" class="footer__link"> Acerca de | </a>
-      <a href="" class="footer__link"> FAQ |</a>
-      <a href="" class="footer__link"> Contacto </a>
-    </footer>
-  </body>
+  <footer id="Contacto" class="footer">
+    <a href="" class="footer__link"> Acerca de | </a>
+    <a href="" class="footer__link"> FAQ |</a>
+    <a href="" class="footer__link"> Contacto </a>
+  </footer>
+</body>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
 
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"
-  ></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"
-  ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"
-  ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </html>
